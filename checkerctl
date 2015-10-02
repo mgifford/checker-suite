@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+. ./checker-suite.conf
+.cabal-sandbox/bin/checkerctl $databus_url $@

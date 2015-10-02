@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+export PATH="${PWD}/.cabal-sandbox/bin:${PATH}"
+
+. .python-sandbox/bin/activate
+
+. ./checker-suite.conf
+exec supervisord -c supervisor.ini

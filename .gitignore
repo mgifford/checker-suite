@@ -1,0 +1,8 @@
+*.swp
+*.swo
+*.err
+*.log
+crawl.json
+.cabal-sandbox
+cabal.sandbox.config
+.python-sandbox

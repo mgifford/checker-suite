@@ -1,0 +1,136 @@
+{
+    "testrun-rules": {
+        "content-types": [
+            "text/html",
+            "application/xhtml+xml",
+            "application/xml"
+        ],
+        "name": null,
+        "sites": [
+            "http://www.tingtun.no",
+            "http://eiii.eu"
+        ],
+        "tools": [
+            "webpage-wam"
+        ]
+    },
+    "owner": null,
+    "site-rules": {
+        "http://eiii.eu": [
+            "EIII Project",
+            {
+                "loglevel": "debug",
+                "max-pages": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        60
+                    ]
+                ],
+                "min-crawl-delay": 1,
+                "obey-robotstxt": true,
+                "scoping-rules": [],
+                "seeds": [
+                    "http://eiii.eu"
+                ],
+                "size-limits": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        2097152
+                    ]
+                ]
+            },
+            {
+                "max-pages": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        600
+                    ]
+                ]
+            },
+            {
+                "tools": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        [
+                            "webpage-wam"
+                        ]
+                    ]
+                ]
+            }
+        ],
+        "http://www.tingtun.no": [
+            null,
+            {
+                "loglevel": "debug",
+                "max-pages": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        60
+                    ]
+                ],
+                "min-crawl-delay": 1,
+                "obey-robotstxt": true,
+                "scoping-rules": [],
+                "seeds": [
+                    "http://www.tingtun.no"
+                ],
+                "size-limits": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        2097152
+                    ]
+                ]
+            },
+            {
+                "max-pages": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        600
+                    ]
+                ]
+            },
+            {
+                "tools": [
+                    [
+                        [
+                            "text/html",
+                            "application/xml",
+                            "application/xhtml+xml"
+                        ],
+                        [
+                            "webpage-wam"
+                        ]
+                    ]
+                ]
+            }
+        ]
+    }
+}

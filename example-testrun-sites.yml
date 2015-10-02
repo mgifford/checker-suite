@@ -1,0 +1,36 @@
+default: &def
+  # Site name
+  -
+  # Crawler rules
+  - &defcr
+    # Seeds and scoping rules are initialized automatically from the
+    # domain name
+    loglevel: info
+    seeds: []
+    scoping-rules: []
+    obey-robotstxt: True
+    min-crawl-delay: 2
+    max-pages:
+      - - &html
+          ["text/html", "application/xml", "application/xhtml+xml"]
+        - 50
+    size-limits:
+      - - *html
+        - 2097152 # 2 MiB
+  # Sampler rules
+  - &defsr
+    max-pages:
+      - - *html
+        - 600
+  # Checker rules
+  - &defchr
+    tools:
+      - - *html
+        - ["webpage-wam"]
+
+http://tingtun.no:
+  - Tingtun
+  - *defcr
+  - *defsr
+  - *defchr
+http://eiii.eu: *def

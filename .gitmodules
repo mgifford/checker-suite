@@ -1,0 +1,33 @@
+[submodule "hs-ttrpc"]
+	path = hs-ttrpc
+	url = git@gitlab.tingtun.no:eiii_source/hs-ttrpc.git
+[submodule "lib/msgpack-haskell"]
+	path = lib/msgpack-haskell
+	url = https://github.com/tingtun/msgpack-haskell.git
+[submodule "wam"]
+	path = wam
+	url = git@gitlab.tingtun.no:eiii_source/wam.git
+[submodule "hs-checker-common"]
+	path = hs-checker-common
+	url = git@gitlab.tingtun.no:eiii_source/hs-checker-common.git
+[submodule "lib/html5parser"]
+	path = lib/html5parser
+	url = git@gitlab.tingtun.no:eiii_source/html5parser.git
+[submodule "lib/iso639-language-codes"]
+	path = lib/iso639-language-codes
+	url = git@gitlab.tingtun.no:eiii_source/iso639-language-codes.git
+[submodule "databus"]
+	path = databus
+	url = git@gitlab.tingtun.no:eiii_source/databus.git
+[submodule "sampler"]
+	path = sampler
+	url = git@gitlab.tingtun.no:eiii_source/sampler.git
+[submodule "eiii-crawler"]
+	path = eiii-crawler
+	url = git@gitlab.tingtun.no:eiii_source/eiii_crawler.git
+[submodule "py-ttrpc"]
+	path = py-ttrpc
+	url = git@gitlab.tingtun.no:eiii_source/py-ttrpc.git
+[submodule "logging"]
+	path = logging
+	url = git@gitlab.tingtun.no:eiii_source/logging.git

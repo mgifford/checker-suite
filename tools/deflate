@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+executable=$(basename "$0")
+
+usage() {
+  echo "$executable: Unzip a zlib compressed file and print to stdout."
+  echo "Usage:"
+  echo ""
+  echo "  $executable /path/to/file"
+}
+
+if [ $# -ne 1 ]; then
+  echo "Wrong number of arguments, need exactly 1"
+  usage
+  exit 1
+fi
+
+if [ ! -f "$1" ]; then
+  echo "Not a file"
+  usage
+  exit 1
+fi
+
+# if ! file "$1" | grep "zlib compressed data" -q; then
+#   echo "Not a zlib compressed file"
+#   usage
+#   exit 1
+# fi
+
+printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" | cat - "$1" | gzip -dc

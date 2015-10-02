@@ -1,0 +1,10 @@
+name: Tingtun Test
+sites:
+  - http://tingtun.no
+  - http://eiii.eu
+content-types:
+  - text/html
+  - application/xhtml+xml
+  - application/xml
+tools:
+  - webpage-wam
